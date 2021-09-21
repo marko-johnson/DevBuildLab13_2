@@ -1,0 +1,12 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Products</h1>
+
+@foreach (Product prod in Model)
+{
+    <div><a href="/coffee/product?prod=@prod.id">@prod.name</a></div>
+}
+
